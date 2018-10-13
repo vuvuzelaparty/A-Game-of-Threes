@@ -39,6 +39,7 @@ The output is a list of valid steps that must be taken to play the game. Each st
 
 #### Challenge Output ####
 
+    ./gameOfThrees 31337357
     31337357 1
     10445786 1
     3481929 0
