@@ -7,7 +7,7 @@ int main(int argc, char **argv) {
 	int num = atoi(argv[1]);
 	if (argc != 2 || !num) {
 		printf("%s\n", "Usage:");
-		printf("%s\n", "    ./gameOfThrees <input number>");
+		printf("%s\n", "    ./gameOfThrees <input number greater than 0>");
 		printf("%s\n", "Example:");
 		printf("%s\n", "    ./gameOfThrees 100");
 		exit(0);
