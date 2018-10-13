@@ -6,11 +6,8 @@ int addOrSubtract(int);
 int main(int argc, char **argv) {
 	int num = atoi(argv[1]);
 	if (argc != 2 || !num) {
-		printf("%s\n", "Usage:");
-		printf("%s\n", "    ./gameOfThrees <input number greater than 0>");
-		printf("%s\n", "Example:");
-		printf("%s\n", "    ./gameOfThrees 100");
-		exit(0);
+		printf("%s\n%s\n%s\n%s\n", "Usage:", "    ./gameOfThrees <input number greater than 0>", "Example:", "    ./gameOfThrees 100");
+		exit(1);
 	}
 	while (num > 1) {
 		printf("%d %d\n", num, addOrSubtract(num));
