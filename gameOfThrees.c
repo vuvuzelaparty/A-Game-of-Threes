@@ -4,11 +4,11 @@
 int addOrSubtract(int);
 
 int main(int argc, char **argv) {
-	int num = atoi(argv[1]);
-	if (argc != 2 || !num) {
+	if (argc != 2 || atoi(argv[1]) < 1) {
 		printf("%s\n%s\n%s\n%s\n", "Usage:", "    ./gameOfThrees <input number greater than 0>", "Example:", "    ./gameOfThrees 100");
 		exit(1);
 	}
+	int num = atoi(argv[1]);
 	while (num > 1) {
 		printf("%d %d\n", num, addOrSubtract(num));
 		num = (num + addOrSubtract(num))/3;
